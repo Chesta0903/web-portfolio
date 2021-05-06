@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Poppins&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -14,22 +21,27 @@ html{
 /* Navbar */
 
 .navbar{
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: rgba(0, 0, 0, 0.5);
-position: sticky;
-top: 0;
-
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    
 }
 
-
-.navbar ul{
-display: flex; 
-list-style: none;  
-margin: 20px 0;
-
+.navbar.sticky{
+    padding: 15px 0;
+    background: #151515;
 }
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 
 .navbar-log img{
@@ -40,42 +52,45 @@ margin: 20px 0;
 
 
 
-.navbar ul{
-    float: right;
+    .navbar ul{
+        display: flex; 
+        list-style: none;  
+        margin: 20px 0;
+        
+        }
+        
+        
+        
+        /* Navbar -  text font, text size and text type */
+        
+        .navbar ul li{
+        
+        font-family: century;
+        font-size: 1.1rem;
+        font-weight: bold;
+        
+        }
+        
+        
+        /* Navbar -  text colour white, space and transition when refresh browser */
+        
+        .navbar ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 8px 25px;
+        transition: all .5s ease ;
 
-}
-
-
-
-
-/* Navbar -  text font, text size and text type */
-
-.navbar ul li{
-font-family: century;
-font-size: 1.1rem;
-font-weight: bold;
-
-}
-
-
-/* Navbar -  text colour white, space and transition when refresh browser */
-
-.navbar ul li a{
-text-decoration: none;
-color: white;
-padding: 8px 25px;
-transition: all .5s ease ;
-
-}
-
-
+        }  
 /* Navbar - Hover - text becomes black with white hover when cursor is on navbar  */
-
+        
 .navbar ul li a:hover{
-background-color: white;
-color: black;
-box-shadow: 0 0 10px  white;
-}
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px  white;
+    }
+
+
+
 
 
 
@@ -128,7 +143,7 @@ right: 3%;
 /* Home Section - Headings font, size, alignment and magin */
 
 .headings{
-font-family: century;
+font-family: 'Adamina', serif;
 font-size: 70px;
 text-align: center;
 margin: 40px 0px;
@@ -369,6 +384,36 @@ footer{
     text-align: center;
 
 }
+
+.social-icons{
+    width: 350px;
+    margin: 40px auto 0 auto;
+    padding-bottom: 30px;  
+}
+
+
+.social-icons a{
+
+color: #fff;    
+font-size: 50px;
+justify-content: center;
+display: flex;
+display: block;
+align-items: center;
+width: 50px;
+height: 50px; 
+transition: all 0.5s ease;
+
+}
+
+.social-icons ul{
+display: flex;
+justify-content: space-around;
+}
+
+
+
+
 
 
 
