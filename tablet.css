@@ -4,10 +4,20 @@
     justify-content: center;
 }
 
+
 /*Headings*/
 .heading{
-    font-size: 2.5rem;
+    font-size: 3rem; 
+    align-content: center;
 }
+
+
+.navbar-log img{
+    height: 3rem;
+    margin-left: 10px;
+    
+    }
+
 
 /*About*/
 #pic{
@@ -33,3 +43,5 @@
 #send{
     width: 20%;
 }
+
+
